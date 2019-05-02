@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Plans</title>
+</head>
+<body>
+
+	<h1>Hola</h1>
+
+	<script>
+	   var url = 'http://localhost:8080/singles/servlet/mobile/subscription/plans/269214';
+
+		fetch(url, {
+		  method: 'GET', // or 'PUT'
+		  //body: JSON.stringify(data), // data can be `string` or {object}!
+		  headers:{
+		    'Content-Type': 'application/json',
+		    'Authorization': 'Bearer ea46f76f-c71a-46f9-a7fc-462a849235b3'
+		  }
+		}).then(res => console.log( res.json()))
+		.catch(error => console.error('Error:', error))
+		.then(response => console.log('Success:', response));
+	</script>
+
+</body>
+</html>
